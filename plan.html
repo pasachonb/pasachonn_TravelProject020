@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>วางแผนเที่ยว | เที่ยวบ้านเรา</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .plan-container {
+      max-width: 1100px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+
+    .plan-intro {
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+
+    .map-box {
+      border: 1px solid #d5dfd9;
+      border-radius: 16px;
+      padding: 15px;
+      margin-bottom: 30px;
+      background: white;
+    }
+
+    .map-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .map-caption {
+      text-align: center;
+      line-height: 1.8;
+      margin: 15px 5px 5px;
+    }
+
+    .plan-section {
+      border: 1px solid #d5dfd9;
+      border-radius: 15px;
+      padding: 22px;
+      margin-bottom: 22px;
+      background: white;
+    }
+
+    .plan-section h2 {
+      margin-top: 0;
+    }
+
+    .plan-list {
+      line-height: 2;
+      padding-left: 25px;
+    }
+
+    .place-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .place-item {
+      border: 1px solid #d5dfd9;
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .place-item h3 {
+      margin-top: 0;
+    }
+
+    .plan-note {
+      line-height: 1.9;
+    }
+
+    @media (max-width: 700px) {
+      .place-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+
+    <nav aria-label="เมนูหลัก">
+      <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="places.html">ที่เที่ยว</a></li>
+        <li><a href="food.html">อาหาร</a></li>
+        <li><a href="plan.html">วางแผนเที่ยว</a></li>
+        <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+        <li><a href="login.html">เข้าสู่ระบบ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="plan-container">
+
+    <h1>วางแผนเที่ยวประจวบคีรีขันธ์</h1>
+
+    <p class="plan-intro">
+      เตรียมตัวออกเดินทางไปสัมผัสธรรมชาติและสถานที่ท่องเที่ยวที่สวยงาม
+      ของจังหวัดประจวบคีรีขันธ์ รวบรวมเส้นทางแนะนำ
+      เพื่อให้คุณสามารถวางแผนการเดินทางได้อย่างสะดวกและสนุกสนาน
+    </p>
+
+    <!-- รูปแผนที่ท่องเที่ยว -->
+    <section class="map-box">
+            <img src="images/maptravel.jpg"
+           alt="แผนที่ 10 ที่เที่ยวประจวบคีรีขันธ์">
+
+      <p class="map-caption">
+        <strong>10 ที่เที่ยวประจวบคีรีขันธ์</strong><br>
+        รวมสถานที่ท่องเที่ยวทางธรรมชาติและแหล่งเรียนรู้
+        ที่น่าสนใจในจังหวัดประจวบคีรีขันธ์
+      </p>
+    </section>
+
+    <!-- การวางแผนก่อนเดินทาง -->
+    <section class="plan-section">
+      <h2>การเตรียมตัวก่อนเดินทาง</h2>
+
+      <ul class="plan-list">
+        <li>ตรวจสอบสภาพอากาศก่อนออกเดินทาง</li>
+        <li>วางแผนเส้นทางและเลือกสถานที่ที่ต้องการไป</li>
+        <li>เตรียมเสื้อผ้าและสิ่งของจำเป็นให้พร้อม</li>
+        <li>ตรวจสอบสภาพรถและน้ำมันเชื้อเพลิง</li>
+        <li>เตรียมเงินสดและอุปกรณ์สำหรับการเดินทาง</li>
+      </ul>
+    </section>
+
+    <!-- สถานที่แนะนำ -->
+    <section class="plan-section">
+      <h2>สถานที่ท่องเที่ยวแนะนำ</h2>
+
+      <div class="place-grid">
+
+        <div class="place-item">
+          <h3>1. Quality Time Farm Stay</h3>
+          <p>แหล่งท่องเที่ยวและที่พักบรรยากาศธรรมชาติในอำเภอหัวหิน</p>
+        </div>
+
+        <div class="place-item">
+          <h3>2. ฟาร์มแกะหลังเขื่อนปราณบุรี</h3>
+          <p>สถานที่ท่องเที่ยวแนวฟาร์ม เหมาะสำหรับพักผ่อนและถ่ายรูป</p>
+        </div>
+
+        <div class="place-item">
+          <h3>3. วนอุทยานท้าวโกษา</h3>
+          <p>แหล่งท่องเที่ยวธรรมชาติในอำเภอปราณบุรี</p>
+        </div>
+
+        <div class="place-item">
+          <h3>4. ล่องเรือคลองเขาแดง</h3>
+          <p>สัมผัสธรรมชาติและชมทัศนียภาพที่สวยงามของอุทยานแห่งชาติเขาสามร้อยยอด</p>
+        </div>
+
+        <div class="place-item">
+          <h3>5. ถ้ำม้าร้อง</h3>
+          <p>แหล่งท่องเที่ยวทางธรรมชาติในอำเภอบางสะพาน</p>
+        </div>
+
+        <div class="place-item">
+          <h3>6. อุทยานแห่งชาติอ่าวสยาม</h3>
+          <p>สถานที่ท่องเที่ยวทางธรรมชาติในอำเภอบางสะพาน</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- คำแนะนำ -->
+    <section class="plan-section">
+      <h2>คำแนะนำสำหรับนักท่องเที่ยว</h2>
+
+      <p class="plan-note">
+        ควรศึกษาข้อมูลของสถานที่ท่องเที่ยวแต่ละแห่งก่อนเดินทาง
+        ปฏิบัติตามกฎระเบียบของสถานที่ และช่วยกันรักษาความสะอาด
+        ไม่ทิ้งขยะในแหล่งท่องเที่ยว เพื่อให้ธรรมชาติคงความสวยงาม
+        และเป็นสถานที่พักผ่อนสำหรับทุกคนต่อไป
+      </p>
+    </section>
+
+   <a class="button" href="travel.html">เช็คข้อมูลการเดินทาง</a>
+  </main>
+
+  <footer>
+    <p>เที่ยวบ้านเรา ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+  </footer>
+
+</body>
+</html>

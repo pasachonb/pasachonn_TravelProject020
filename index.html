@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าแรก | เที่ยวบ้านเรา</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* กล่องสไลด์รูปภาพ */
+    .slider {
+      width: 90%;
+      max-width: 900px;
+      height: 350px;
+      margin: 25px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 400%;
+      height: 100%;
+      animation: slide 16s infinite;
+    }
+
+    .slides img {
+      width: 25%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0%, 20% { transform: translateX(0); }
+      25%, 45% { transform: translateX(-25%); }
+      50%, 70% { transform: translateX(-50%); }
+      75%, 95% { transform: translateX(-75%); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <p class="site-name">เที่ยวบ้านเรา</p>
+  <nav aria-label="เมนูหลัก">
+    <ul>
+      <li><a href="index.html">หน้าแรก</a></li>
+      <li><a href="places.html">ที่เที่ยว</a></li>
+      <li><a href="food.html">อาหาร</a></li>
+      <li><a href="plan.html">วางแผนเที่ยว</a></li>
+      <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+       <li><a href="login.html">เข้าสู่ระบบ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h1>เที่ยวบ้านเราในหนึ่งวัน</h1>
+  <p>ชวนเดินตลาด ชิมอาหารพื้นถิ่น และพักชมวิวในชุมชน</p>
+
+  <!-- สไลด์รูปภาพ -->
+  <div class="slider">
+    <div class="slides">
+      <img src="images/KLM.jpg" alt="เขาล้อมหมวก">
+      <img src="images/sapanpla.jpg" alt="สะพานปลา">
+      <img src="images/aomanow.jpg" alt="อ่าวมะนาว">
+      <img src="images/Kaow.jpg" alt="เขาช่องกระจก">
+    
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>เริ่มจากจุดที่คุณสนใจ</h2>
+    <p>เลือกสถานที่ที่อยากไป แล้วจัดเส้นทางให้เหมาะสมกับเวลาของคุณ</p>
+    <a class="button" href="food.html">ดูแหล่งท่องเที่ยว</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>พรรษชล 020 | ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+</body>
+</html>
